@@ -1,0 +1,25 @@
+<mat-card>
+    <mat-card-title>
+        Alterar modelo
+    </mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="nome" [(value)]="modelo.nome" name="nome">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Descrição" [(value)]="modelo.descricao" name="descricao">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Parametrização" [(value)]="modelo.parametrizacao" name="parametrizacao">
+        </mat-form-field>
+        <mat-form-field> 
+            <input matInput placeholder="Parametros" [(value)]="modelo.parametros" name="parametros">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="deleteModelo()" color="warn">
+        Excluir
+    </button>
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>

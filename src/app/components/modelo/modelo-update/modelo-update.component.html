@@ -1,0 +1,25 @@
+<mat-card>
+    <mat-card-title>
+        Alterar modelo
+    </mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="nome" [(ngModel)]="modelo.nome" name="nome">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Descrição" [(ngModel)]="modelo.descricao" name="descricao">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Parametrização" [(ngModel)]="modelo.parametrizacao" name="parametrizacao">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Parametros" [(ngModel)]="modelo.parametros" name="parametros">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="updateModelo()" color="primary">
+        Atualizar
+    </button>
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
